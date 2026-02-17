@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Arcellx Insights Hub - Power BI Pilot"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6d83fa0c-4517-ac6d-40c0-580ad217f509"
+  }
+}

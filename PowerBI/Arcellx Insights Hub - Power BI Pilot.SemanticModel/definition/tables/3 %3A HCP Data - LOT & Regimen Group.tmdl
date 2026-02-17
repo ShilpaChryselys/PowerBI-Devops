@@ -1,0 +1,366 @@
+table '3 : HCP Data - LOT & Regimen Group'
+	lineageTag: 5852debe-2c28-4031-9377-c57ff76d80c8
+
+	column City
+		dataType: string
+		lineageTag: 2f3afbc0-9111-45bd-8cb6-abbf1c6a1ed7
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: 499f05d1-254e-4846-9372-4738c1977cde
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+	column ZIP
+		dataType: string
+		lineageTag: be11b591-99cf-4120-bcb6-4c2e80067e6f
+		summarizeBy: none
+		sourceColumn: ZIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column ' Child Flag Sort'
+		dataType: int64
+		formatString: 0
+		lineageTag: edacb030-efde-4d31-8847-856fd431427e
+		summarizeBy: sum
+		sourceColumn: " Child Flag Sort"
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Period Sort'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d3ed49c-1410-4863-a5c9-a8e526f30f9d
+		summarizeBy: sum
+		sourceColumn: Time Period Sort
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Regimen Group Sort'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3472acbf-0e89-4e66-9f43-5d8cc62dc639
+		summarizeBy: sum
+		sourceColumn: Regimen Group Sort
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HCP NPI'
+		dataType: string
+		lineageTag: 51bc8674-91eb-40d9-9835-13e1874865a4
+		summarizeBy: none
+		sourceColumn: HCP NPI
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Kite ID'
+		dataType: string
+		lineageTag: d967cd68-8684-4ce8-af8a-df6dc01841a9
+		summarizeBy: none
+		sourceColumn: Kite ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'KITE EID'
+		dataType: string
+		lineageTag: b09a8ec1-cf3d-4702-8fe0-4cdbef1c6804
+		summarizeBy: none
+		sourceColumn: KITE EID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Full Name'
+		dataType: string
+		lineageTag: d22fc927-a4dd-4192-9c06-4b99c813718a
+		summarizeBy: none
+		sourceColumn: Full Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'First Name'
+		dataType: string
+		lineageTag: 1f9b3cf3-eda7-4abb-910a-b8a7c686e853
+		summarizeBy: none
+		sourceColumn: First Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Middle Name'
+		dataType: string
+		lineageTag: 872c2791-4a7c-4cd0-84fb-8985863f21a1
+		summarizeBy: none
+		sourceColumn: Middle Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Name'
+		dataType: string
+		lineageTag: 0b859535-d8fa-45c9-a570-a64fa2961480
+		summarizeBy: none
+		sourceColumn: Last Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Address Line 1'
+		dataType: string
+		lineageTag: 81dcc7dc-8ea3-4ed8-ad81-746d79a64472
+		summarizeBy: none
+		sourceColumn: Address Line 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HCP Speciality'
+		dataType: string
+		lineageTag: c56a682b-f038-49ea-b9e6-f58b5b13ed06
+		summarizeBy: none
+		sourceColumn: HCP Speciality
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HCP Segment'
+		dataType: string
+		lineageTag: 5fbbab08-3df2-4382-bc9f-7b00fb5d948a
+		summarizeBy: none
+		sourceColumn: HCP Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'KOL Flag'
+		dataType: string
+		lineageTag: f83a70f8-311f-45ce-8c34-0a0ba11b27a9
+		summarizeBy: none
+		sourceColumn: KOL Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child EID'
+		dataType: string
+		lineageTag: b9752dcd-9938-4ad3-a99e-e5d0a895a7bb
+		summarizeBy: none
+		sourceColumn: Child EID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child Name'
+		dataType: string
+		lineageTag: 728a6394-4815-4872-8e6a-88f06120b7d6
+		summarizeBy: none
+		sourceColumn: Child Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child Flag'
+		dataType: string
+		lineageTag: bfb936e6-2b1f-4c2b-aba0-55a6c9b07949
+		summarizeBy: none
+		sourceColumn: Child Flag
+		sortByColumn: ' Child Flag Sort'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child Address'
+		dataType: string
+		lineageTag: 2e7efbed-ce92-40e0-811b-f54c2364166f
+		summarizeBy: none
+		sourceColumn: Child Address
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child City'
+		dataType: string
+		lineageTag: 7369db8e-693b-474e-ac90-7721974fa4c2
+		summarizeBy: none
+		sourceColumn: Child City
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child State'
+		dataType: string
+		lineageTag: 95889313-81fa-4458-90c8-56694609cf77
+		summarizeBy: none
+		sourceColumn: Child State
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child ZIP'
+		dataType: string
+		lineageTag: de884432-a5ce-4dad-98c7-e6e24f081ae6
+		summarizeBy: none
+		sourceColumn: Child ZIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent EID'
+		dataType: string
+		lineageTag: 39a6e369-bf73-4ff3-8026-a84190f1da5e
+		summarizeBy: none
+		sourceColumn: Parent EID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Name'
+		dataType: string
+		lineageTag: 752edcc0-d936-4b57-bf34-def9f1803df6
+		summarizeBy: none
+		sourceColumn: Parent Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Address'
+		dataType: string
+		lineageTag: ecddac3f-36aa-47d9-908e-5f55c5b010fd
+		summarizeBy: none
+		sourceColumn: Parent Address
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent City'
+		dataType: string
+		lineageTag: d4962aa6-3f4c-4e22-89c3-6757c6fb37e5
+		summarizeBy: none
+		sourceColumn: Parent City
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent State'
+		dataType: string
+		lineageTag: e1dc10dc-6a01-4ed0-867f-64a2671d59c3
+		summarizeBy: none
+		sourceColumn: Parent State
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent ZIP'
+		dataType: string
+		lineageTag: 1a78f74c-d0a3-404f-8c81-8758e6acaca8
+		summarizeBy: none
+		sourceColumn: Parent ZIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'KITE ATC Flag'
+		dataType: string
+		lineageTag: 2cabc56d-37ff-455b-af43-d77f04761ceb
+		summarizeBy: none
+		sourceColumn: KITE ATC Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Abecma ATC Flag'
+		dataType: string
+		lineageTag: 3924483c-93fd-4929-8ab6-97459ff2b7ee
+		summarizeBy: none
+		sourceColumn: Abecma ATC Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Carvykti ATC Flag'
+		dataType: string
+		lineageTag: 82268f72-6ce0-4051-8c8e-5f53d62da41a
+		summarizeBy: none
+		sourceColumn: Carvykti ATC Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Clinical Site Flag'
+		dataType: string
+		lineageTag: c186b9e2-1255-49a1-9a4b-ba92aa5dc3c5
+		summarizeBy: none
+		sourceColumn: Clinical Site Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Outpatient MM Claims Flag'
+		dataType: string
+		lineageTag: 3ac9cfb2-1b7e-4fab-a675-f37203548703
+		summarizeBy: none
+		sourceColumn: Outpatient MM Claims Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Period'
+		dataType: string
+		lineageTag: c0259ba5-c62d-4e3f-8522-5e9da528aa71
+		summarizeBy: none
+		sourceColumn: Time Period
+		sortByColumn: 'Time Period Sort'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Regimen Group'
+		dataType: string
+		lineageTag: f286e8ce-95e0-4b21-b338-638ae36a5642
+		summarizeBy: none
+		sourceColumn: Regimen Group
+		sortByColumn: 'Regimen Group Sort'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Line of Therapy'
+		dataType: string
+		lineageTag: 08ae0cdb-c44c-4744-91cb-dceefb0651fb
+		summarizeBy: none
+		sourceColumn: Line of Therapy
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total MM Patients'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4fb03fc1-fb89-41af-b9d5-e697384935fc
+		summarizeBy: sum
+		sourceColumn: Total MM Patients
+
+		annotation SummarizationSetBy = Automatic
+
+	column dlk_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: aaff2f0b-1c17-40ee-bb32-f643dc0d3bef
+		summarizeBy: none
+		sourceColumn: dlk_date
+
+		variation Variation
+			isDefault
+			relationship: 2f92683b-4d88-4972-8c22-b31e8db6c4ce
+			defaultHierarchy: LocalDateTable_4494de81-e127-4de9-8165-12c9cff2f957.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '3 : HCP Data - LOT & Regimen Group' = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("arcellx-commercial-prod.cloud.databricks.com", "sql/1.0/warehouses/04c909e03207d60c", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
+				    bronze_Database = Source{[Name="bronze",Kind="Database"]}[Data],
+				    dwh_Schema = bronze_Database{[Name="dwh",Kind="Schema"]}[Data],
+				    rpt_pbi_hcp_lot_Table = dwh_Schema{[Name="rpt_pbi_hcp_lot",Kind="Table"]}[Data],
+				    #"Renamed Columns" = Table.RenameColumns(rpt_pbi_hcp_lot_Table,{{"HCP_NPI", "HCP NPI"}, {"Kite_ID", "Kite ID"}, {"KITE_EID", "KITE EID"}, {"Full_Name", "Full Name"}, {"First_Name", "First Name"}, {"Middle_Name", "Middle Name"}, {"Last_Name", "Last Name"}, {"Address_Line_1", "Address Line 1"}, {"HCP_Speciality", "HCP Speciality"}, {"HCP_Segment", "HCP Segment"}, {"KOL_Flag", "KOL Flag"}, {"Child_EID", "Child EID"}, {"Child_Name", "Child Name"}, {"Child_Flag", "Child Flag"}, {"Child_Address", "Child Address"}, {"Child_City", "Child City"}, {"Child_State", "Child State"}, {"Child_ZIP", "Child ZIP"}, {"Parent_EID", "Parent EID"}, {"Parent_Name", "Parent Name"}, {"Parent_Address", "Parent Address"}, {"Parent_City", "Parent City"}, {"Parent_State", "Parent State"}, {"Parent_ZIP", "Parent ZIP"}, {"KITE_ATC_Flag", "KITE ATC Flag"}, {"Abecma_ATC_Flag", "Abecma ATC Flag"}, {"Carvykti_ATC_Flag", "Carvykti ATC Flag"}, {"Clinical_Site_Flag", "Clinical Site Flag"}, {"Outpatient_MM_Claims_Flag", "Outpatient MM Claims Flag"}, {"Time_Period", "Time Period"}, {"Regimen_Group", "Regimen Group"}, {"Line_of_Therapy", "Line of Therapy"}, {"Total_MM_Patients", "Total MM Patients"}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"Total MM Patients", Int64.Type}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type","SATELLITE","Satellite",Replacer.ReplaceText,{"Child Flag"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","OTHER","Others (Community Centers, etcs)",Replacer.ReplaceText,{"Child Flag"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","CAR T","CAR T (Unspecified)",Replacer.ReplaceText,{"Regimen Group"}),
+				    #"Added Conditional Column" = Table.AddColumn(#"Replaced Value2", " Child Flag Sort", each if [Child Flag] = "ATC" then 1 else if [Child Flag] = "Satellite" then 2 else if [Child Flag] = "Others (Community Centers, etcs)" then 3 else 4, type number),
+				    #"Added Conditional Column1" = Table.AddColumn(#"Added Conditional Column", "Time Period Sort", each if [Time Period] = "Q1'22" then 1 else if [Time Period] = "Q2'22" then 2 else if [Time Period] = "Q3'22" then 3 else if [Time Period] = "Q4'22" then 4 else if [Time Period] = "Q1'23" then 5 else if [Time Period] = "Q2'23" then 6 else if [Time Period] = "Q3'23" then 7 else if [Time Period] = "Q4'23" then 8 else if [Time Period] = "Q1'24" then 9 else if [Time Period] = "Q2'24" then 10 else if [Time Period] = "Q3'24" then 11 else if [Time Period] = "Q4'24" then 12 else if [Time Period] = "Q1'25" then 13 else 14, type number),
+				    #"Added Conditional Column2" = Table.AddColumn(#"Added Conditional Column1", "Regimen Group Sort", each if [Regimen Group] = "Others" then 14 else if [Regimen Group] = "IMiD-Doublet" then 13 else if [Regimen Group] = "PI-Doublet" then 12 else if [Regimen Group] = "Empliciti +/- other regimens" then 11 else if [Regimen Group] = "Blenrep +/- other regimens" then 10 else if [Regimen Group] = "Selinexor +/- other regimens" then 9 else if [Regimen Group] = "PI + IMiD" then 8 else if [Regimen Group] = "Anti-CD38 Triplet" then 7 else if [Regimen Group] = "Anti-CD38 Quad" then 6 else if [Regimen Group] = "GPRC5D BsAbs+/- other regimens" then 5 else if [Regimen Group] = "BCMA BsAbs +/- other regimens" then 4 else if [Regimen Group] = "CAR T (Unspecified)" then 3 else if [Regimen Group] = "CARVYKTI" then 2 else if [Regimen Group] = "ABECMA" then 1 else 15, type number),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Conditional Column2",{{" Child Flag Sort", Int64.Type}, {"Time Period Sort", Int64.Type}, {"Regimen Group Sort", Int64.Type}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

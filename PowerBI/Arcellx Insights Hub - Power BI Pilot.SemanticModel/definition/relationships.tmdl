@@ -1,0 +1,19 @@
+relationship bc11045e-44c0-445a-8f83-6732548df71f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: '1 : Account Universe - ATC Data'.dlk_date
+	toColumn: LocalDateTable_26061d04-5868-404f-959f-7efc58707dbf.Date
+
+relationship e314063c-5a41-43a0-974e-d196335e5888
+	joinOnDateBehavior: datePartOnly
+	fromColumn: '2 : HCP Universe Data'.dlk_date
+	toColumn: LocalDateTable_79a50694-cf02-457f-8b11-547991bee7e9.Date
+
+relationship 2f92683b-4d88-4972-8c22-b31e8db6c4ce
+	joinOnDateBehavior: datePartOnly
+	fromColumn: '3 : HCP Data - LOT & Regimen Group'.dlk_date
+	toColumn: LocalDateTable_4494de81-e127-4de9-8165-12c9cff2f957.Date
+
+relationship cfbb08ab-3742-9ab6-a7a3-fe792f8e0cd4
+	fromColumn: '2 : HCP Universe Data'.'Child EID'
+	toColumn: '1 : Account Universe - ATC Data'.'HCO ID'
+

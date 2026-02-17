@@ -1,0 +1,568 @@
+table '2 : HCP Universe Data'
+	lineageTag: e1e72fe5-d0f7-4345-b90b-6769148fdeee
+
+	column City
+		dataType: string
+		lineageTag: a491b172-6cda-48ce-8f92-75d8b195731a
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: a858de84-125a-4d5a-b5eb-ffde71011261
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+	column ZIP
+		dataType: string
+		lineageTag: fed37204-97ac-4c08-a703-f00c3f14f532
+		summarizeBy: none
+		sourceColumn: ZIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HCP Address Information'
+		dataType: string
+		lineageTag: 723bee86-1418-404e-a436-e1f73636cc61
+		summarizeBy: none
+		sourceColumn: HCP Address Information
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account Address Information'
+		dataType: string
+		lineageTag: 4ac40554-89c0-4599-9f5e-c443aebffc87
+		summarizeBy: none
+		sourceColumn: Account Address Information
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Account Address Information'
+		dataType: string
+		lineageTag: c4a25e17-d0eb-40d5-9da8-a84dd125abef
+		summarizeBy: none
+		sourceColumn: Parent Account Address Information
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MM 2L+ Decile'
+		dataType: string
+		lineageTag: 9b4221d0-8721-4a85-b09f-e05d64c7fc21
+		summarizeBy: none
+		sourceColumn: MM 2L+ Decile
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HCP Name'
+		dataType: string
+		lineageTag: d8486ee8-f694-4e24-acd3-7cb15742facc
+		summarizeBy: none
+		sourceColumn: HCP Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HCP NPI'
+		dataType: string
+		lineageTag: 2ddf3f62-3ecd-408e-93db-2f8198e5e9be
+		summarizeBy: none
+		sourceColumn: HCP NPI
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Kite ID'
+		dataType: string
+		lineageTag: 09f66397-afec-4662-ac1b-cab6bd89e126
+		summarizeBy: none
+		sourceColumn: Kite ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'KITE EID'
+		dataType: string
+		lineageTag: 7593f912-bff9-4576-b74a-ce368548dbd0
+		summarizeBy: none
+		sourceColumn: KITE EID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Full Name'
+		dataType: string
+		lineageTag: 93401757-6484-4565-a32e-5e7f94044045
+		summarizeBy: none
+		sourceColumn: Full Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'First Name'
+		dataType: string
+		lineageTag: 9776f975-aa6e-49b6-98db-5ca88728d081
+		summarizeBy: none
+		sourceColumn: First Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Middle Name'
+		dataType: string
+		lineageTag: deecb067-b187-4f68-9290-52ce5f5c6192
+		summarizeBy: none
+		sourceColumn: Middle Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Name'
+		dataType: string
+		lineageTag: 81ea11d8-d8f0-45c6-ab18-a7f3f2d47e96
+		summarizeBy: none
+		sourceColumn: Last Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Address Line 1'
+		dataType: string
+		lineageTag: 313f30f8-a89d-4491-9867-70355ee2c3d7
+		summarizeBy: none
+		sourceColumn: Address Line 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HCP Speciality'
+		dataType: string
+		lineageTag: 1a954bc1-25da-4d38-88ac-e9e974f5e4ff
+		summarizeBy: none
+		sourceColumn: HCP Speciality
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HCP Priority'
+		dataType: string
+		lineageTag: 76987c4c-913b-41b2-bfe7-4e1007aba316
+		summarizeBy: none
+		sourceColumn: HCP Priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'KOL Flag'
+		dataType: string
+		lineageTag: 8061abe3-fe97-434c-88da-39cdac5708ba
+		summarizeBy: none
+		sourceColumn: KOL Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child EID'
+		dataType: string
+		lineageTag: a00df54f-8edc-41ce-88da-01f0ee54101e
+		summarizeBy: none
+		sourceColumn: Child EID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child Name'
+		dataType: string
+		lineageTag: a838ae8a-0f28-4c6a-a023-820b71700221
+		summarizeBy: none
+		sourceColumn: Child Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child Flag'
+		dataType: string
+		lineageTag: c386a951-7654-49ba-9f0f-9eba3bbd86ee
+		summarizeBy: none
+		sourceColumn: Child Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child Address'
+		dataType: string
+		lineageTag: f291be26-ab8f-447c-bcd2-def626bee8a6
+		summarizeBy: none
+		sourceColumn: Child Address
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child City'
+		dataType: string
+		lineageTag: 27daff69-eca6-4f10-b422-01604a522c89
+		summarizeBy: none
+		sourceColumn: Child City
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child State'
+		dataType: string
+		lineageTag: a59ba1a6-a434-4bef-abe2-b7da4b7a81f5
+		summarizeBy: none
+		sourceColumn: Child State
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Child ZIP'
+		dataType: string
+		lineageTag: b6e71cf4-ecf0-4cc2-a588-e84ac3ce4b5d
+		summarizeBy: none
+		sourceColumn: Child ZIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent EID'
+		dataType: string
+		lineageTag: 861c4f71-a601-44dc-9d8d-eb48779c1c91
+		summarizeBy: none
+		sourceColumn: Parent EID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Name'
+		dataType: string
+		lineageTag: 03a76134-b78b-424e-9d5f-c706a3df7711
+		summarizeBy: none
+		sourceColumn: Parent Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Address'
+		dataType: string
+		lineageTag: 1372cf7e-5674-4870-b681-418d577dd4a2
+		summarizeBy: none
+		sourceColumn: Parent Address
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent City'
+		dataType: string
+		lineageTag: f81809c4-3361-437c-b7cf-69dd6b8f05c5
+		summarizeBy: none
+		sourceColumn: Parent City
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent State'
+		dataType: string
+		lineageTag: 229d3723-c7b6-419b-9067-25704cbd4b32
+		summarizeBy: none
+		sourceColumn: Parent State
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent ZIP'
+		dataType: string
+		lineageTag: 52ce9e36-8aee-4c26-a019-c4d086cc50b4
+		summarizeBy: none
+		sourceColumn: Parent ZIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'KITE ATC Flag'
+		dataType: string
+		lineageTag: e33dc361-ccf2-4523-95ce-535a46f56f5e
+		summarizeBy: none
+		sourceColumn: KITE ATC Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Abecma ATC Flag'
+		dataType: string
+		lineageTag: 223bc7a7-1884-4a86-83ef-dcaadbbb52b9
+		summarizeBy: none
+		sourceColumn: Abecma ATC Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Carvykti ATC Flag'
+		dataType: string
+		lineageTag: 39825dc7-e390-4b4c-87a0-637eb5333a69
+		summarizeBy: none
+		sourceColumn: Carvykti ATC Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Clinical Site Flag'
+		dataType: string
+		lineageTag: c8e78886-72c5-4bd8-bd17-3759ab256ff9
+		summarizeBy: none
+		sourceColumn: Clinical Site Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Outpatient MM Claims Flag'
+		dataType: string
+		lineageTag: 2ec57331-46ee-46a1-a2ff-be4e92d206b2
+		summarizeBy: none
+		sourceColumn: Outpatient MM Claims Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Period'
+		dataType: string
+		lineageTag: 37404bf4-b72d-4319-8517-8d3eafc38ab5
+		summarizeBy: none
+		sourceColumn: Time Period
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MM Treated Patient 2L+'
+		dataType: int64
+		formatString: 0
+		lineageTag: c2553467-5df9-4e8f-9103-90555c79c08f
+		summarizeBy: sum
+		sourceColumn: MM Treated Patient 2L+
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MM Treated Patient 4L+'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0fe98e25-f84b-4648-aafd-5415f053885f
+		summarizeBy: sum
+		sourceColumn: MM Treated Patient 4L+
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ABECMA PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0bdf8518-b491-4531-9156-c00d8107cb4f
+		summarizeBy: sum
+		sourceColumn: ABECMA PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CARVYKTI PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: ce569fc0-f23c-4464-8495-57cfaa03e410
+		summarizeBy: sum
+		sourceColumn: CARVYKTI PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'GENERIC CAR T PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: 63e6718f-3e0f-413d-a211-2ad16ef1c214
+		summarizeBy: sum
+		sourceColumn: GENERIC CAR T PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'All MM CAR T PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ecda567-4a39-4ea7-a49f-e786b6d721e4
+		summarizeBy: sum
+		sourceColumn: All MM CAR T PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ABECMA IN PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: c49ef868-9732-452a-8b01-37540695d111
+		summarizeBy: sum
+		sourceColumn: ABECMA IN PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ABECMA OUT PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: be417008-f839-4261-9588-e8eb2c8bc990
+		summarizeBy: sum
+		sourceColumn: ABECMA OUT PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ABECMA UNKNOWN PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: d1ca94bc-8784-4e31-ac3b-d1a231e4c985
+		summarizeBy: sum
+		sourceColumn: ABECMA UNKNOWN PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CARVYKTI IN PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: c2b9b7ed-f7e0-470b-bba3-c28dea5a7665
+		summarizeBy: sum
+		sourceColumn: CARVYKTI IN PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CARVYKTI OUT PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6dc150eb-10f9-4bfe-8c10-5e56b4d6d0dd
+		summarizeBy: sum
+		sourceColumn: CARVYKTI OUT PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CARVYKTI UNKNOWN PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ad2aeea-0ae2-4080-a345-c746ca95b35c
+		summarizeBy: sum
+		sourceColumn: CARVYKTI UNKNOWN PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'GENERIC CAR T OUT PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: bf9e66d2-cea4-45f0-bfee-3d8a51a1730e
+		summarizeBy: sum
+		sourceColumn: GENERIC CAR T OUT PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'All MM CAR T OP PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: aeaf1e77-4932-4030-99ec-2362b29c2db8
+		summarizeBy: sum
+		sourceColumn: All MM CAR T OP PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TECVAYLI Patient Volume'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8aa2a2a0-f407-4b26-9787-6a02561278c2
+		summarizeBy: sum
+		sourceColumn: TECVAYLI Patient Volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ELREXFIO Patient Volume'
+		dataType: int64
+		formatString: 0
+		lineageTag: da7fcbf4-724b-4eb5-b403-06c04e694dfe
+		summarizeBy: sum
+		sourceColumn: ELREXFIO Patient Volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column BCMA_PATIENT_VOLUME
+		dataType: int64
+		formatString: 0
+		lineageTag: f424d2ba-cd52-445e-a504-f03115d56562
+		summarizeBy: sum
+		sourceColumn: BCMA_PATIENT_VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TALVEY Patient Volume'
+		dataType: int64
+		formatString: 0
+		lineageTag: 74583c2c-ff96-414b-9aff-24578ecbddcc
+		summarizeBy: sum
+		sourceColumn: TALVEY Patient Volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MM BsAbs Patient Volume'
+		dataType: int64
+		formatString: 0
+		lineageTag: 05958707-628f-4e23-894f-97ced869589c
+		summarizeBy: sum
+		sourceColumn: MM BsAbs Patient Volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'BCMA IN PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: 048b1d74-fc49-4911-9ba5-17da997db42f
+		summarizeBy: sum
+		sourceColumn: BCMA IN PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'BCMA OUT PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7168143c-4c68-4a49-ad5f-669f995ce5ef
+		summarizeBy: sum
+		sourceColumn: BCMA OUT PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'BCMA UNKNOWN PATIENT VOLUME'
+		dataType: int64
+		formatString: 0
+		lineageTag: 711a8104-777b-4e0e-87ac-32632d181041
+		summarizeBy: sum
+		sourceColumn: BCMA UNKNOWN PATIENT VOLUME
+
+		annotation SummarizationSetBy = Automatic
+
+	column '2L+ Decile'
+		dataType: int64
+		formatString: 0
+		lineageTag: 041d2cde-7f4b-4ed8-b458-4ac981e45442
+		summarizeBy: sum
+		sourceColumn: 2L+ Decile
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HCP Segment'
+		dataType: string
+		lineageTag: d50de4ed-9e08-4b2f-96c2-b61736b76499
+		summarizeBy: none
+		sourceColumn: HCP Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column dlk_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 22529348-ee0f-4ad4-a2c3-8c7f80171a34
+		summarizeBy: none
+		sourceColumn: dlk_date
+
+		variation Variation
+			isDefault
+			relationship: e314063c-5a41-43a0-974e-d196335e5888
+			defaultHierarchy: LocalDateTable_79a50694-cf02-457f-8b11-547991bee7e9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '2 : HCP Universe Data' = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("arcellx-commercial-prod.cloud.databricks.com", "sql/1.0/warehouses/04c909e03207d60c", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
+				    bronze_Database = Source{[Name="bronze",Kind="Database"]}[Data],
+				    dwh_Schema = bronze_Database{[Name="dwh",Kind="Schema"]}[Data],
+				    rpt_pbi_hcp_univ_Table = dwh_Schema{[Name="rpt_pbi_hcp_univ",Kind="Table"]}[Data],
+				    #"Renamed Columns" = Table.RenameColumns(rpt_pbi_hcp_univ_Table,{{"HCP_NPI", "HCP NPI"}, {"Kite_ID", "Kite ID"}, {"KITE_EID", "KITE EID"}, {"Full_Name", "Full Name"}, {"First_Name", "First Name"}, {"Middle_Name", "Middle Name"}, {"Last_Name", "Last Name"}, {"Address_Line_1", "Address Line 1"}, {"HCP_Speciality", "HCP Speciality"}, {"HCP_Segment", "HCP Priority"}, {"KOL_Flag", "KOL Flag"}, {"Child_EID", "Child EID"}, {"Child_Name", "Child Name"}, {"Child_Flag", "Child Flag"}, {"Child_Address", "Child Address"}, {"Child_City", "Child City"}, {"Child_State", "Child State"}, {"Child_ZIP", "Child ZIP"}, {"Parent_EID", "Parent EID"}, {"Parent_Name", "Parent Name"}, {"Parent_Address", "Parent Address"}, {"Parent_City", "Parent City"}, {"Parent_State", "Parent State"}, {"Parent_ZIP", "Parent ZIP"}, {"KITE_ATC_Flag", "KITE ATC Flag"}, {"Abecma_ATC_Flag", "Abecma ATC Flag"}, {"Carvykti_ATC_Flag", "Carvykti ATC Flag"}, {"Clinical_Site_Flag", "Clinical Site Flag"}, {"Outpatient_MM_Claims_Flag", "Outpatient MM Claims Flag"}, {"Time_Period", "Time Period"}, {"MM_Treated_Patient_2L", "MM Treated Patient 2L+"}, {"MM_Treated_Patient_4L", "MM Treated Patient 4L+"}, {"ABECMA_PATIENT_VOLUME", "ABECMA PATIENT VOLUME"}, {"CARVYKTI_PATIENT_VOLUME", "CARVYKTI PATIENT VOLUME"}, {"GENERIC_CAR_T_PATIENT_VOLUME", "GENERIC CAR T PATIENT VOLUME"}, {"BCMA_UNKNOWN_PATIENT_VOLUME", "BCMA UNKNOWN PATIENT VOLUME"}, {"BCMA_OUT_PATIENT_VOLUME", "BCMA OUT PATIENT VOLUME"}, {"BCMA_IN_PATIENT_VOLUME", "BCMA IN PATIENT VOLUME"}, {"MM_BsAbs_Patient_Volume", "MM BsAbs Patient Volume"}, {"TALVEY_Patient_Volume", "TALVEY Patient Volume"}, {"ELREXFIO_Patient_Volume", "ELREXFIO Patient Volume"}, {"TECVAYLI_Patient_Volume", "TECVAYLI Patient Volume"}, {"All_MM_CAR_T_OP_PATIENT_VOLUME", "All MM CAR T OP PATIENT VOLUME"}, {"GENERIC_CAR_T_OUT_PATIENT_VOLUME", "GENERIC CAR T OUT PATIENT VOLUME"}, {"CARVYKTI_UNKNOWN_PATIENT_VOLUME", "CARVYKTI UNKNOWN PATIENT VOLUME"}, {"CARVYKTI_OUT_PATIENT_VOLUME", "CARVYKTI OUT PATIENT VOLUME"}, {"CARVYKTI_IN_PATIENT_VOLUME", "CARVYKTI IN PATIENT VOLUME"}, {"ABECMA_UNKNOWN_PATIENT_VOLUME", "ABECMA UNKNOWN PATIENT VOLUME"}, {"ABECMA_OUT_PATIENT_VOLUME", "ABECMA OUT PATIENT VOLUME"}, {"ABECMA_IN_PATIENT_VOLUME", "ABECMA IN PATIENT VOLUME"}, {"All_MM_CAR_T_PATIENT_VOLUME", "All MM CAR T PATIENT VOLUME"}, {"_2L_Decile", "2L+ Decile"}, {"HCP_Segment_Based_on_R24_months", "HCP Segment"}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Renamed Columns",{{"MM Treated Patient 2L+", Int64.Type}, {"MM Treated Patient 4L+", Int64.Type}, {"ABECMA PATIENT VOLUME", Int64.Type}, {"CARVYKTI PATIENT VOLUME", Int64.Type}, {"GENERIC CAR T PATIENT VOLUME", Int64.Type}, {"All MM CAR T PATIENT VOLUME", Int64.Type}, {"ABECMA IN PATIENT VOLUME", Int64.Type}, {"ABECMA OUT PATIENT VOLUME", Int64.Type}, {"ABECMA UNKNOWN PATIENT VOLUME", Int64.Type}, {"CARVYKTI IN PATIENT VOLUME", Int64.Type}, {"CARVYKTI OUT PATIENT VOLUME", Int64.Type}, {"CARVYKTI UNKNOWN PATIENT VOLUME", Int64.Type}, {"GENERIC CAR T OUT PATIENT VOLUME", Int64.Type}, {"All MM CAR T OP PATIENT VOLUME", Int64.Type}, {"TECVAYLI Patient Volume", Int64.Type}, {"ELREXFIO Patient Volume", Int64.Type}, {"BCMA_PATIENT_VOLUME", Int64.Type}, {"TALVEY Patient Volume", Int64.Type}, {"MM BsAbs Patient Volume", Int64.Type}, {"BCMA IN PATIENT VOLUME", Int64.Type}, {"BCMA OUT PATIENT VOLUME", Int64.Type}, {"BCMA UNKNOWN PATIENT VOLUME", Int64.Type}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"First Name", Text.Proper, type text}, {"Middle Name", Text.Proper, type text}, {"Last Name", Text.Proper, type text}, {"City", Text.Proper, type text}, {"Child City", Text.Proper, type text}, {"Parent City", Text.Proper, type text}}),
+				    #"Added Custom" = Table.AddColumn(#"Capitalized Each Word", "HCP Address Information", each [Address Line 1] & ", " & [City] & ", " & [State] & " " & [ZIP]),
+				    #"Added Custom1" = Table.AddColumn(#"Added Custom", "Account Address Information", each [Child Address] & ", " & [Child City] & ", " & [Child State] & " " & [Child ZIP]),
+				    #"Added Custom2" = Table.AddColumn(#"Added Custom1", "Parent Account Address Information", each [Parent Address] & ", " & [Parent City] & ", " & [Parent State] & " " & [Parent ZIP]),
+				    #"Added Custom3" = Table.AddColumn(#"Added Custom2", "MM 2L+ Decile", each "D" & [#"2L+ Decile"]),
+				    #"Added Custom4" = Table.AddColumn(#"Added Custom3", "HCP Name", each [First Name] & " " & [Last Name]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Added Custom4",{{"2L+ Decile", Int64.Type}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type1","Y","Yes",Replacer.ReplaceText,{"KOL Flag", "KITE ATC Flag", "Abecma ATC Flag", "Carvykti ATC Flag", "Clinical Site Flag", "Outpatient MM Claims Flag"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","N","No",Replacer.ReplaceText,{"KOL Flag", "KITE ATC Flag", "Abecma ATC Flag", "Carvykti ATC Flag", "Clinical Site Flag", "Outpatient MM Claims Flag"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","ATC Internal Referrer","ATC Referrer",Replacer.ReplaceText,{"HCP Segment"}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","OTHER","Others",Replacer.ReplaceText,{"Child Flag"}),
+				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","SATELLITE","Satellite",Replacer.ReplaceText,{"Child Flag"}),
+				    #"Filtered Rows" = Table.SelectRows(#"Replaced Value4", each ([Time Period] = "R24M (Q2'23 - Q1'25)"))
+				in
+				    #"Filtered Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
