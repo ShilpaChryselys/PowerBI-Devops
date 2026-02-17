@@ -1,6 +1,10 @@
 table '1 : Account Universe - ATC Data'
 	lineageTag: 383c3d2e-d93a-46c6-8ab8-c9ba0b31a07d
 
+	measure 'Latest Column' = 1
+		formatString: 0
+		lineageTag: b9d92409-0077-462d-af73-c448a67528d8
+
 	column 'ATC Address Information'
 		dataType: string
 		lineageTag: bb153e4f-fc72-4c5d-9045-d47159b6e710
