@@ -1,0 +1,61 @@
+table Buckets
+	lineageTag: c98f9d6f-3eef-42b4-b61d-e9c514f9cdbe
+
+	column 'Bucket Order'
+		formatString: 0
+		lineageTag: 870855bf-d649-41c5-a18f-0a0183b09228
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Bucket Order]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Bucket Label'
+		lineageTag: df7ba675-7766-4eb1-add4-118524c9e13a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Bucket Label]
+		sortByColumn: 'Bucket Order'
+
+		annotation SummarizationSetBy = Automatic
+
+	column MinInc
+		lineageTag: 5ddfdc06-392d-46b9-895d-ce69745407cb
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MinInc]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MaxExc
+		lineageTag: eaad9027-a037-4520-95bb-abc8ab471480
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MaxExc]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Buckets = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				  "Bucket Order", INTEGER,
+				  "Bucket Label", STRING,
+				  "MinInc", DOUBLE,
+				  "MaxExc", DOUBLE,
+				  {
+				    {1,"<75%",        -1.0E9, 0.75},
+				    {2,"75–100%",      0.75,  1.00},
+				    {3,"100–125%",     1.00,  1.25},
+				    {4,"125–150%",     1.25,  1.50},
+				    {5,">150%",        1.50,  1.0E9}
+				  }
+				)
+
+	annotation PBI_Id = f7a9b575a34f4f78b114919218ad2b2e
+
