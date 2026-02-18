@@ -1,0 +1,33 @@
+table Patients
+	lineageTag: 3faa3f93-862b-4ec5-b4d2-9c90d159b0d3
+
+	column KPIs
+		lineageTag: f241e0be-0f12-47c0-bc47-f3583fb46e50
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [KPIs]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sorting Order'
+		formatString: 0
+		lineageTag: 9a7ebe52-4115-4fd6-b1e5-111c70837165
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Sorting Order]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Patients = calculated
+		mode: import
+		source =
+				
+				DATATABLE("KPIs", STRING, "Sorting Order", INTEGER,
+				 {
+				     {"4L+ MM Patients",2},
+				     {"3L+ MM Patients",1}
+				 }
+				)
+
+	annotation PBI_Id = 7c07d6256ea94494a9ad89b4d5afc921
+

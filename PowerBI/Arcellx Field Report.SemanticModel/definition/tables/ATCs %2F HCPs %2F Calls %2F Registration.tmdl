@@ -1,0 +1,35 @@
+table 'ATCs / HCPs / Calls / Registration'
+	lineageTag: 31381b8d-9420-4588-9147-0f0fda25586c
+
+	column KPIs
+		lineageTag: 8cb7a559-8824-4212-b18e-3e6fd898c6c0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [KPIs]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sorting Order'
+		formatString: 0
+		lineageTag: c22c1e84-9f25-4495-bea6-bc7f4c90fd40
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Sorting Order]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'ATCs / HCPs / Calls / Registration' = calculated
+		mode: import
+		source =
+				
+				DATATABLE("KPIs", STRING, "Sorting Order", INTEGER,
+				 {
+				     {"ATCs",1},
+				     {"HCPs",2},
+				     {"Registrations",3},
+				     {"Calls",4}
+				 }
+				)
+
+	annotation PBI_Id = 5bbdd003de8944a3bdd836acfd6c4361
+

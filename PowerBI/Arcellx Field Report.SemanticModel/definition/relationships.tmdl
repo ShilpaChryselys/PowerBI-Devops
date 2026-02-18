@@ -1,0 +1,26 @@
+relationship 5c1d9e74-d55d-4a2e-b720-84e16289fcca
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendar.Date
+	toColumn: LocalDateTable_8fc4b2f8-975c-40b3-9012-8ea43ee33b4f.Date
+
+relationship e011ab1f-fd34-4bfe-9d96-23c9eab2342f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Refresh Date'.'Data as of Date'
+	toColumn: LocalDateTable_743f3879-c5e6-45a9-8261-9f3e655d59c6.Date
+
+relationship 993b1ce9-31b9-4f00-a415-689b19d5b025
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Time Bucket Def'.'Current Start Date'
+	toColumn: LocalDateTable_90276fdf-b385-452a-b05e-742845f5d479.Date
+
+relationship d0e7035b-7c69-424f-8a4d-346d4e9cbfad
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Time Bucket Def'.'Current End Date'
+	toColumn: LocalDateTable_f360f96f-18f0-47fd-b929-f5d545ebbb29.Date
+
+relationship 9f02ae2e-482c-2a44-ab56-fa70cdd4b9b5
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: US_ATC_Mock_Data.ID
+	toColumn: States.ID
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Arcellx Field Report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "45af0734-186a-ad6b-4f0f-8e6446203073"
+  }
+}

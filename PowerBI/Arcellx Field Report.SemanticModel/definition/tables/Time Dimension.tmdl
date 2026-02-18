@@ -1,0 +1,39 @@
+table 'Time Dimension'
+	lineageTag: 7423a025-fff0-405c-b3b6-7f7d9f2c31f1
+
+	column 'Time Bucket'
+		lineageTag: 29b1c0dd-148b-45f9-8705-b6250e237dbd
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Time Bucket]
+		sortByColumn: 'Time ID'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time ID'
+		formatString: 0
+		lineageTag: 550b0d82-06a9-4a36-b8bf-ca50947cb716
+		summarizeBy: count
+		isNameInferred
+		sourceColumn: [Time ID]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Time Dimension' = calculated
+		mode: import
+		source =
+				
+				DATATABLE("Time Bucket", STRING, "Time ID",  INTEGER,
+				 {
+				     {"CW",1},
+				     {"MTD",2},
+				     {"QTD",3},
+				     {"YTD",4},
+				     {"R12M",5},
+				     {"R13W",6},
+				     {"LTD",7}
+				 }
+				)
+
+	annotation PBI_Id = 85d6e5d73841475db309717c65d32549
+

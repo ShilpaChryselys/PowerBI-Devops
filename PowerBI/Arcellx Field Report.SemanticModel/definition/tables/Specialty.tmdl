@@ -1,0 +1,22 @@
+table Specialty
+	lineageTag: abfbe5fc-5bab-41ce-9dfe-d6e07fb9dd2d
+
+	column Specilaty
+		dataType: string
+		lineageTag: b6c52f32-b8fe-496c-b7b6-6f446ab33a86
+		summarizeBy: none
+		sourceColumn: Specilaty
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Specialty = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8kjNTSzJz8lPr1SK1UHm6vrnJSPEfVNTMpMTcxRQBJ3y81IVfBOLivLLFUKKEvOKC3IS80oUNJx8QzTBCpxTc3JKcxKLFEIyUosSC4C6YgE=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Specilaty = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Specilaty", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

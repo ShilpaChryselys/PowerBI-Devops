@@ -1,0 +1,44 @@
+table 'Geo Dimension'
+	lineageTag: 101fd337-f9da-408a-93e6-13b4b0f3a026
+
+	column 'Geo Level'
+		lineageTag: eff11017-7869-420c-a0cf-1fabf4c572cb
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Geo Level]
+		sortByColumn: 'Geo Level ID'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Geo Level ID'
+		formatString: 0
+		lineageTag: d854a2e2-27fa-49e1-b310-2f385623a859
+		summarizeBy: count
+		isNameInferred
+		sourceColumn: [Geo Level ID]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Geo Name'
+		lineageTag: 61509052-19b4-474c-977d-254a0f17fbd0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Geo Name]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Geo Dimension' = calculated
+		mode: import
+		source =
+				
+				DATATABLE("Geo Level", STRING, "Geo Level ID", INTEGER, "Geo Name", STRING,
+				 {
+				     {"Nation",1, "United States"},
+				     {"Region",2, "United States"},
+				     {"District",3, "United States"},
+				     {"Territory",4, "United States"}
+				 }
+				)
+
+	annotation PBI_Id = 3ecde2727b8646669dc611c3ae7caed8
+

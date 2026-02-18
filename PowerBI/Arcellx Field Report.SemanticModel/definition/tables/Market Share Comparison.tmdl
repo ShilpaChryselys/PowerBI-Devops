@@ -1,0 +1,81 @@
+table 'Market Share Comparison'
+	lineageTag: 3c7d4a64-2897-46be-936e-43723570db85
+
+	column Stage
+		lineageTag: 230610d6-eff2-4e5c-b8b9-f06d963e6557
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Stage]
+		sortByColumn: 'Stage ID'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Stage ID'
+		formatString: 0
+		lineageTag: 252487fe-fa37-4650-9a4b-3fc1748cf0d1
+		summarizeBy: count
+		isNameInferred
+		sourceColumn: [Stage ID]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product
+		lineageTag: f7181544-dec0-4d93-b543-7505e7b286a0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Product]
+		sortByColumn: 'Product ID'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product ID'
+		lineageTag: e4920819-ceed-4bb0-95e6-a007603fa247
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Product ID]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Market Share Comparison' = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE("Stage", STRING, "Stage ID" , INTEGER, "Product", STRING, "Product ID", STRING,
+				 
+				           {
+				             {"1L IN", 1, "Abecma", 1},
+				             {"1L IN", 1, "Carvykti", 2},
+				             {"1L IN", 1, "CAR-T", 3},
+				             {"1L IN", 1, "Anti CD38 ", 4},
+				             {"1L IN", 1, "PI + IMid", 5},
+				             {"1L IN", 1, "Others", 6},
+				
+				             
+				             {"2L", 2, "Abecma", 1},
+				             {"2L", 2, "Carvykti", 2},
+				             {"2L", 2, "CAR-T", 3},
+				             {"2L", 2, "Anti CD38 ", 4},
+				             {"2L", 2, "PI + IMid", 5},
+				             {"2L", 2, "Others", 6},
+				
+				             
+				             {"3L", 3, "Abecma", 1},
+				             {"3L", 3, "Carvykti", 2},
+				             {"3L", 3, "CAR-T", 3},
+				             {"3L", 3, "Anti CD38 ", 4},
+				             {"3L", 3, "PI + IMid", 5},
+				             {"3L", 3, "Others", 6},
+				
+				             
+				             {"4L+", 4, "Abecma", 1},
+				             {"4L+", 4, "Carvykti", 2},
+				             {"4L+", 4, "CAR-T", 3},
+				             {"4L+", 4, "Anti CD38 ", 4},
+				             {"4L+", 4, "PI + IMid", 5},
+				             {"4L+", 4, "Others", 6}
+				           }
+				)
+				```
+
+	annotation PBI_Id = 7483cfa80b60484f82d42ec9c5a40566
+

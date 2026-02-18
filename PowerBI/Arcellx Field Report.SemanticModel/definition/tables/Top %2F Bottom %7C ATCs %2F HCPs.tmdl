@@ -1,0 +1,36 @@
+table 'Top / Bottom | ATCs / HCPs'
+	lineageTag: 28bff909-08b1-4330-a02a-fa3f98b62ff8
+
+	column KPIs
+		lineageTag: 9fcfe22b-5ae9-4183-9b88-c42157cb5a0a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [KPIs]
+		sortByColumn: 'Sorting Order'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sorting Order'
+		formatString: 0
+		lineageTag: 74200efa-580c-4fed-a5c3-740d7d92f09f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Sorting Order]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Top / Bottom | ATCs / HCPs' = calculated
+		mode: import
+		source =
+				
+				DATATABLE("KPIs", STRING, "Sorting Order", INTEGER,
+				 {
+				     {"Top ATCs",1},
+				     {"Bottom ATCs",2},
+				     {"Top HCPs",3},
+				     {"Bottom HCPs",4}
+				 }
+				)
+
+	annotation PBI_Id = 87b38fbea0e54110b75d7e048c2a3dd1
+
