@@ -1,0 +1,24 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["dfiq_manager_summary","Perf View"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+ref table DateTableTemplate_2b362fa7-6994-4df2-82d8-3829c2c59d5d
+ref table dfiq_manager_summary
+ref table LocalDateTable_e446b31f-339b-4526-88b2-ab4e944e9014
+ref table DimQuarter
+ref table 'Perf View'
+ref table 'Metric Toggle'
+ref table Buckets
+ref table AxisQuarter
+ref table DimQuarter(KPI)
+
+ref cultureInfo en-US
+
