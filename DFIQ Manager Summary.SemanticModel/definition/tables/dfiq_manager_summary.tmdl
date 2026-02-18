@@ -1000,6 +1000,10 @@ table dfiq_manager_summary
 		formatString: 0
 		lineageTag: b4bdecff-c314-4210-a7b7-d886daceb4b3
 
+	measure 'Latest Column2' = 1
+		formatString: 0
+		lineageTag: 9749fc7c-2e35-47e1-bb0b-dbbdec7c9209
+
 	column emp_name
 		dataType: string
 		lineageTag: 141f7e44-4f7b-4353-a516-f894c0eed955
